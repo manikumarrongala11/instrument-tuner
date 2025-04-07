@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrument Tuner AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎵 Instrument Tuner AI</h1>
+            <p>Get personalized tuning guidance for your musical instrument</p>
+        </header>
+        
+        <div class="instrument-selector">
+            <label for="instrument">Select your instrument:</label>
+            <select id="instrument">
+                <option value="guitar">Guitar (Standard)</option>
+                <option value="bass">Bass Guitar</option>
+                <option value="violin">Violin</option>
+                <option value="cello">Cello</option>
+                <option value="ukulele">Ukulele</option>
+                <option value="custom">Custom Tuning</option>
+            </select>
+            
+            <div id="custom-tuning" class="hidden">
+                <label for="tuning-notes">Enter tuning notes (comma separated):</label>
+                <input type="text" id="tuning-notes" placeholder="E2,A2,D3,G3,B3,E4">
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div id="chat-output" class="chat-output"></div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Ask about tuning or play a note...">
+                <button id="send-btn">Send</button>
+                <button id="listen-btn">🎤 Listen</button>
+            </div>
+        </div>
+        
+        <div class="visual-tuner">
+            <div class="needle"></div>
+            <div class="frequency-display">-- Hz</div>
+            <div class="note-display">--</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
