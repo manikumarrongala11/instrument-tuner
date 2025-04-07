@@ -8,7 +8,7 @@
     {
       "src": "backend/api/tuner.py",
       "use": "@vercel/python",
-      "config": { 
+      "config": {
         "maxLambdaSize": "15mb",
         "runtime": "python3.9"
       }
